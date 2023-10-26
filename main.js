@@ -21,10 +21,6 @@ function computer(){
     
 document.querySelector(".reset-button").innerHTML= 'Clear';
 }
-computer();
-
-
-
 function choosed(data){
     console.log('you choosed',data);
     if(data === 'paper'){
