@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>rock-paper-scissor</title>
+</head>
+<body>
+    <div class="heading">
+        <h3>Rock-Paper-Scissors</h3>
+    </div>
+    <div class="buttonsblock">
+        <button class="image" onclick="computer();
+        choosed('paper');
+        "><img src="paper-emoji.png" alt=""></button>
+        <button class="image" onclick="computer();
+        choosed('rock');"><img src="rock-emoji.png" alt=""></button>
+        <button class="image" onclick="computer();
+        choosed('scissor');"><img src="scissors-emoji.png" alt=""></button>
+    </div>
+    <div class="displayblock">
+        <p class="result">
+        </p>
+        <p class="choosed">
+        </p>
+        <p class="data">
+        </p>
+        <button class="reset-button" onclick="deleted();
+        localStorage.removeItem('dataObj');
+        ">Clear</button>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
